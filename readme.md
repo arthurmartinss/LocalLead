@@ -166,6 +166,7 @@ npm install
 Para iniciar o servidor do MVP, utilize:
 
 ```bash
+cd src
 npm start
 ```
 
