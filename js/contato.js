@@ -1,24 +1,32 @@
+/* script contato locallead */
+
 export const initContato = () => {
     const form = document.querySelector('.contact-form');
     const contactSection = document.querySelector('.contact-container');
 
-    const showError = (input, message) => {
-        const group = input.closest('.form-group');
-        const existing = group.querySelector('.error-msg');
-        if (existing) existing.remove();
+    // Validação de segurança para evitar erros de console em outras páginas
+    if (!form || !contactSection) return;
 
-        const error = document.createElement('span');
-        error.className = 'error-msg';
+    const showError = (input, message) => {
+        const group = input.closest('.contact-form__group');
+        let error = group.querySelector('.contact-form__error');
+        
+        // Se a mensagem de erro ainda não existir, cria o elemento dinamicamente
+        if (!error) {
+            error = document.createElement('span');
+            error.className = 'contact-form__error';
+            group.appendChild(error);
+        }
+        
         error.textContent = message;
-        group.appendChild(error);
-        input.classList.add('input-error');
+        input.classList.add('contact-form__input--error');
     };
 
     const clearError = (input) => {
-        const group = input.closest('.form-group');
-        const existing = group.querySelector('.error-msg');
-        if (existing) existing.remove();
-        input.classList.remove('input-error');
+        const group = input.closest('.contact-form__group');
+        const error = group.querySelector('.contact-form__error');
+        if (error) error.remove();
+        input.classList.remove('contact-form__input--error');
     };
 
     const validateEmail = (email) => {
@@ -26,14 +34,21 @@ export const initContato = () => {
     };
 
     const showSuccess = () => {
+        // Injeta a estrutura de sucesso padronizada com BEM
         contactSection.innerHTML = `
             <div class="success-card">
-                <div class="success-icon">✅</div>
-                <h3 class="success-title">Mensagem enviada!</h3>
-                <p class="success-text">Obrigado por entrar em contato. Nossa equipe vai responder em breve.</p>
-                <button class="success-btn" onclick="location.reload()">Enviar outra mensagem</button>
+                <div class="success-card__icon">✅</div>
+                <h3 class="success-card__title">Mensagem enviada!</h3>
+                <p class="success-card__text">Obrigado por entrar em contato. Nossa equipe vai responder em breve.</p>
+                <button type="button" class="success-card__btn">Enviar outra mensagem</button>
             </div>
         `;
+
+        // Captura o botão injetado e adiciona o evento de forma moderna e limpa
+        const btnReset = contactSection.querySelector('.success-card__btn');
+        btnReset.addEventListener('click', () => {
+            window.location.reload();
+        });
     };
 
     form.addEventListener('submit', (e) => {

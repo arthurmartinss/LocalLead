@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/contato.css">
     <script src="../js/main.js" type="module" defer></script>
-    <script src="../js/contato.js" type="module" defer></script>
     <title>LocalLead | Contato</title>
 </head>
 
@@ -16,7 +15,7 @@
 
     <header class="header">
         <nav class="navbar" aria-label="Navegação principal">
-            <a href="./contato.html" class="navbar__brand">
+            <a href="../index.html" class="navbar__brand">
                 <img src="../assets/img/logo_locallead.png" alt="Logo LocalLead" class="navbar__logo">
                 <span class="navbar__name">LocalLead</span>
             </a>
@@ -44,7 +43,7 @@
                 <span class="section-heading__tag">Fale com a gente</span>
                 <h2 class="section-heading__title" id="title-contact">Entre em Contato</h2>
             </div>
-            <p class="contact-subtitle">
+            <p class="contact-hero__subtitle">
                 Tem alguma dúvida sobre o LocalLead, sugestões de melhoria ou quer entender melhor nossa solução de
                 mobilidade urbana? Envie uma mensagem para a nossa equipe!
             </p>
@@ -54,39 +53,39 @@
 
             <form action="#" method="POST" class="contact-form" aria-label="Formulário de envio de mensagem">
 
-                <div class="form-group">
-                    <label for="nome">Nome Completo</label>
-                    <input type="text" id="nome" name="nome" required aria-required="true"
+                <div class="contact-form__group">
+                    <label for="nome" class="contact-form__label">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" class="contact-form__input" required aria-required="true"
                         placeholder="Digite seu nome completo">
                 </div>
 
-                <div class="form-group">
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email" required aria-required="true"
+                <div class="contact-form__group">
+                    <label for="email" class="contact-form__label">E-mail</label>
+                    <input type="email" id="email" name="email" class="contact-form__input" required aria-required="true"
                         placeholder="exemplo@email.com">
                 </div>
 
-                <div class="form-group">
-                    <label for="assunto">Assunto Principal</label>
-                <select id="assunto" name="assunto" required aria-required="true">
-                <option value="" disabled selected>O que podemos te ajudar?</option>
-                <option value="previsao">A previsão que vi não bateu</option>
-                <option value="linha">Tem algo errado numa linha</option>
-                <option value="sugestao">Tenho uma sugestão de melhoria</option>
-                <option value="dado">Vi um dado que parece desatualizado</option>
-                <option value="parceria">Sou da imprensa ou quero parceria</option>
-                <option value="outros">É outra coisa</option>
-                </select>
+                <div class="contact-form__group">
+                    <label for="assunto" class="contact-form__label">Assunto Principal</label>
+                    <select id="assunto" name="assunto" class="contact-form__input" required aria-required="true">
+                        <option value="" disabled selected>O que podemos te ajudar?</option>
+                        <option value="previsao">A previsão que vi não bateu</option>
+                        <option value="linha">Tem algo errado numa linha</option>
+                        <option value="sugestao">Tenho uma sugestão de melhoria</option>
+                        <option value="dado">Vi um dado que parece desatualizado</option>
+                        <option value="parceria">Sou da imprensa ou quero parceria</option>
+                        <option value="outros">É outra coisa</option>
+                    </select>
                 </div>
 
-                <div class="form-group">
-                    <label for="mensagem">Sua Mensagem</label>
-                    <textarea id="mensagem" name="mensagem" rows="5" required aria-required="true"
+                <div class="contact-form__group">
+                    <label for="mensagem" class="contact-form__label">Sua Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" class="contact-form__input" rows="5" required aria-required="true"
                         placeholder="Escreva detalhadamente sua mensagem aqui..."></textarea>
                 </div>
 
-                <div class="form-actions">
-                    <button type="submit" class="btn-submit" aria-label="Enviar dados do formulário de contato">
+                <div class="contact-form__actions">
+                    <button type="submit" class="contact-form__btn" aria-label="Enviar dados do formulário de contato">
                         Enviar Mensagem
                     </button>
                 </div>
@@ -101,7 +100,6 @@
         <div class="footer__content">
             <div class="footer__column">
                 <h2 class="footer__title">LocalLead</h2>
-
                 <ul class="footer__list">
                     <li><a href="./sobre.html">Sobre o projeto</a></li>
                     <li><a href="./solucao.html">Nossa solução</a></li>
@@ -112,7 +110,6 @@
 
             <div class="footer__column">
                 <h2 class="footer__title">Projeto</h2>
-
                 <ul class="footer__list">
                     <li>Global Solution FIAP</li>
                     <li>Space Connect</li>
@@ -123,7 +120,6 @@
 
             <div class="footer__column">
                 <h2 class="footer__title">Explore</h2>
-
                 <ul class="footer__list">
                     <li>Dados espaciais</li>
                     <li>IA preditiva</li>
@@ -138,9 +134,8 @@
                 <a href="../index.html" class="footer__brand" aria-label="Página inicial LocalLead">
                     <img src="../assets/img/logo_locallead.png" alt="Logo LocalLead" class="footer__logo">
                 </a>
-
                 <p class="footer__copyright">
-                    © 2026 LocalLead — Projeto acadêmico desenvolvido para a Global Solution FIAP.
+                    © 2026 LocalLead — Projeto academicamente desenvolvido para a Global Solution FIAP.
                 </p>
             </div>
         </div>
