@@ -1,11 +1,161 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <link rel="shortcut icon" href="../assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/main.css">
+
+    <script type="module" src="../js/main.js" defer></script>
+
+    <title>LocalLead | Solução</title>
 </head>
+
 <body>
-    
+    <header class="header">
+        <nav class="navbar" aria-label="Navegação principal">
+            <a href="../index.html" class="navbar__brand" aria-label="Página inicial do LocalLead">
+                <img src="../assets/img/logo_locallead.png" alt="Logo LocalLead" class="navbar__logo">
+                <span class="navbar__name">LocalLead</span>
+            </a>
+
+            <button class="navbar__toggle" type="button" aria-label="Abrir menu de navegação" aria-expanded="false"
+                aria-controls="navbar-menu">
+                <span class="navbar__toggle-line"></span>
+                <span class="navbar__toggle-line"></span>
+                <span class="navbar__toggle-line"></span>
+            </button>
+
+            <ul class="navbar__menu" id="navbar-menu">
+                <li class="navbar__item">
+                    <a href="../index.html" class="navbar__link">Início</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="./sobre.html" class="navbar__link">Sobre</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="./solucao.html" class="navbar__link navbar__link--active">Solução</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="./faq.html" class="navbar__link">FAQ</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="./contato.html" class="navbar__link">Contato</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="./integrantes.html" class="navbar__link">Integrantes</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="solucao-main">
+        
+        <section class="solucao-intro">
+            <div class="section-heading">
+                <span class="section-heading__tag">Nossa engenharia</span>
+                <h2 class="section-heading__title">Tecnologia espacial aplicada à mobilidade urbana</h2>
+                <p class="solucao-intro__description">Transformamos dados complexos coletados fora da atmosfera em previsões simples que blindam a sua rotina contra o caos do transporte metropolitano.</p>
+            </div>
+        </section>
+
+        <section class="solucao-grid">
+            <div class="solucao-card">
+                <div class="solucao-card__badge">01</div>
+                <h3 class="solucao-card__title">Sensoriamento Orbital</h3>
+                <p class="solucao-card__text">Monitoramos índices climáticos e anomalias de densidade ao redor das estações através de dados de satélite de observação da Terra, mapeando os riscos de alagamentos e obstruções nas vias.</p>
+            </div>
+
+            <div class="solucao-card">
+                <div class="solucao-card__badge">02</div>
+                <h3 class="solucao-card__title">Predição por Inteligência Artificial</h3>
+                <p class="solucao-card__text">Nossos algoritmos cruzam o histórico de falhas operacionais das linhas 11 coral e 12 safira com as métricas climáticas do momento, antecipando em qual horário específico a linha entrará em colapso.</p>
+            </div>
+
+            <div class="solucao-card">
+                <div class="solucao-card__badge">03</div>
+                <h3 class="solucao-card__title">Painel de Tomada de Decisão</h3>
+                <p class="solucao-card__text">O passageiro recebe a informação refinada em formato de status futuro. Em vez de descobrir a lentidão na plataforma, o usuário visualiza a previsão de lotação e tempo antes de sair de casa.</p>
+            </div>
+        </section>
+
+        <section class="solucao-mvp">
+            <div class="section-heading">
+                <span class="section-heading__tag">O Produto na Prática</span>
+                <h2 class="section-heading__title">Nossos protótipos e interfaces (MVP)</h2>
+            </div>
+
+            <div class="mvp-gallery">
+                <div class="mvp-gallery__item">
+                    <div class="mvp-gallery__image-wrapper">
+                        <img src="../assets/img/solucao/mvp-mobile.png" alt="Protótipo da interface mobile do LocalLead">
+                    </div>
+                    <div class="mvp-gallery__info">
+                        <h3 class="mvp-gallery__title">Interface do Passageiro</h3>
+                        <p class="mvp-gallery__text">Visualização simples com indicadores de cores (verde, amarelo e vermelho) mostrando o nível de fluxo preditivo para as próximas horas nas linhas monitoradas.</p>
+                    </div>
+                </div>
+
+                <div class="mvp-gallery__item">
+                    <div class="mvp-gallery__image-wrapper">
+                        <img src="../assets/img/solucao/mvp-dados.png" alt="Painel analítico cruzando dados de satélite e linhas">
+                    </div>
+                    <div class="mvp-gallery__info">
+                        <h3 class="mvp-gallery__title">Cruzamento de Dados Meteorológicos</h3>
+                        <p class="mvp-gallery__text">Painel que demonstra o motor da IA interceptando alertas de tempestades severas e traduzindo esse impacto em minutos adicionais de espera nas plataformas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__column">
+                <h2 class="footer__title">LocalLead</h2>
+                <ul class="footer__list">
+                    <li><a href="./sobre.html">Sobre o projeto</a></li>
+                    <li><a href="./solucao.html">Nossa solução</a></li>
+                    <li><a href="./integrantes.html">Integrantes</a></li>
+                    <li><a href="./contato.html">Fale conosco</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__column">
+                <h2 class="footer__title">Projeto</h2>
+                <ul class="footer__list">
+                    <li>Global Solution FIAP</li>
+                    <li>Space Connect</li>
+                    <li>Mobilidade urbana inteligente</li>
+                    <li>Transporte ferroviário</li>
+                </ul>
+            </div>
+
+            <div class="footer__column">
+                <h2 class="footer__title">Explore</h2>
+                <ul class="footer__list">
+                    <li>Dados espaciais</li>
+                    <li>IA preditiva</li>
+                    <li>Análise climática</li>
+                    <li>Experiência do passageiro</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="footer__bottom-content">
+                <a href="../index.html" class="footer__brand" aria-label="Página inicial LocalLead">
+                    <img src="../assets/img/logo_locallead.png" alt="Logo LocalLead" class="footer__logo">
+                </a>
+                <p class="footer__copyright">
+                    © 2026 LocalLead — Projeto acadêmico desenvolvido para a Global Solution FIAP.
+                </p>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
