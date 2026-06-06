@@ -16,7 +16,10 @@
     padding: 0 2rem 6rem 2rem;
 }
 
+/* animacao sticky para o titulo descer junto com a tela */
 .faq-grid__heading {
+    position: sticky;
+    top: 8rem;
     height: max-content;
 }
 
@@ -91,6 +94,11 @@
     .faq-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+
+    /* desativa o sticky no mobile/tablet para manter alinhado */
+    .faq-grid__heading {
+        position: static;
     }
 
     .faq-item__question {
