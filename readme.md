@@ -234,22 +234,36 @@ LocalLead/
 │   │   └── favicon.ico
 │   ├── img/
 │   │   ├── app/
-│   │   │   ├── app-home.png
-│   │   │   ├── app-horarios-linhas.png
-│   │   │   ├── app-vagoes.png
-│   │   │   └── app-mockup-principal.png
+│   │   │   ├── app-home.jpg
+│   │   │   ├── app-horarios-linha.jpg
+│   │   │   ├── app-mockup-principal.png
+│   │   │   └── app-vagoes.jpg
 │   │   ├── apresentacao/
-│   │   │   ├── home-desktop.png
-│   │   │   ├── sobre-desktop.png
-│   │   │   ├── solucao-desktop.png
 │   │   │   ├── aplicativo-desktop.png
-│   │   │   ├── integrantes-desktop.png
+│   │   │   ├── home-desktop.png
 │   │   │   ├── home-mobile.png
-│   │   │   └── aplicativo-mobile.png
+│   │   │   ├── integrantes-desktop.png
+│   │   │   ├── sobre-desktop.png
+│   │   │   └── solucao-desktop.png
 │   │   ├── home/
-│   │   │   └── imagens utilizadas na página inicial
+│   │   │   ├── cta-cidade-conectada-compresso.png
+│   │   │   ├── fluxo-satélite-ia-cidade-compresso.png
+│   │   │   ├── hero-trem-cidade-compresso.png
+│   │   │   ├── mockup-locaallead-app-compresso.png
+│   │   │   ├── problema-chuva-compresso.png
+│   │   │   ├── problema-espera-compresso.png
+│   │   │   ├── problema-lotacao-compresso.png
+│   │   │   ├── publico-estudantes-compresso.png
+│   │   │   ├── publico-passageiros-compresso.png
+│   │   │   └── publico-trabalhadores-compresso.png
 │   │   ├── sobre/
-│   │   │   └── imagens utilizadas na página sobre
+│   │   │   ├── sobre-hero-contexto-urbano.png
+│   │   │   ├── sobre-rede-urbana-inteligente.png
+│   │   │   └── sobre-space-connect-conceito.png
+│   │   ├── solucao/
+│   │   │   ├── distribuicao.jpeg
+│   │   │   ├── processamento.jpeg
+│   │   │   └── satelite.jpeg
 │   │   └── logo_locallead.png
 │   └── integrantes/
 │       ├── foto_arthur.jpg
@@ -258,24 +272,27 @@ LocalLead/
 │       ├── foto_leticia_cardoso.jpeg
 │       └── foto_leticia_dias.jpeg
 ├── css/
-│   ├── aplicativo.css
+│   ├── apicativo.css
 │   ├── base.css
 │   ├── buttons.css
 │   ├── cards.css
 │   ├── contato.css
 │   ├── faq.css
 │   ├── footer.css
-│   ├── header.css
 │   ├── hero.css
 │   ├── home.css
 │   ├── integrantes.css
 │   ├── layout.css
 │   ├── main.css
+│   ├── menu.css
 │   ├── sobre.css
 │   └── solucao.css
 ├── js/
+│   ├── contato.js
+│   ├── faq.js
 │   ├── main.js
-│   └── menu.js
+│   ├── menu.js
+│   └── solucao.js
 ├── paginas/
 │   ├── aplicativo.html
 │   ├── contato.html
@@ -284,7 +301,7 @@ LocalLead/
 │   ├── sobre.html
 │   └── solucao.html
 ├── index.html
-└── README.md
+└── readme.md
 ```
 
 ---
