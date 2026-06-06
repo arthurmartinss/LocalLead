@@ -1,0 +1,134 @@
+.visual-grid {
+    width: min(100% - 2rem, 92rem);
+    margin-inline: auto;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.visual-grid--three {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.visual-card {
+    position: relative;
+    min-height: 24rem;
+    border-radius: 1.8rem;
+    overflow: hidden;
+    background-color: var(--light-bg);
+}
+
+.visual-card__image {
+    width: 100%;
+    height: 100%;
+}
+
+.visual-card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.visual-card__content {
+    position: absolute;
+    left: 1.5rem;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.86);
+    backdrop-filter: blur(1rem);
+}
+
+.visual-card__number {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    color: var(--primary-red);
+    font-size: 0.78rem;
+    font-weight: 800;
+}
+
+.visual-card__title {
+    color: var(--text-main);
+    font-size: 1.35rem;
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -0.04rem;
+}
+
+.visual-card--large {
+    min-height: 28rem;
+}
+
+/* Até 1300px */
+@media (max-width: 1300px) {
+    .visual-grid {
+        width: min(100% - 2rem, 82rem);
+        gap: 1.25rem;
+    }
+
+    .visual-card {
+        min-height: 22rem;
+        border-radius: 1.5rem;
+    }
+
+    .visual-card--large {
+        min-height: 25rem;
+    }
+
+    .visual-card__content {
+        left: 1.2rem;
+        right: 1.2rem;
+        bottom: 1.2rem;
+        padding: 1rem;
+    }
+
+    .visual-card__title {
+        font-size: 1.2rem;
+    }
+}
+
+/* Tablet e mobile */
+@media (max-width: 768px) {
+    .visual-grid {
+        width: min(100% - 1.5rem, 100%);
+    }
+
+    .visual-grid--three {
+        grid-template-columns: 1fr;
+    }
+
+    .visual-card,
+    .visual-card--large {
+        min-height: 24rem;
+    }
+
+    .visual-card__image img {
+        object-position: center;
+    }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+    .visual-grid {
+        width: min(100% - 1rem, 100%);
+        gap: 1rem;
+    }
+
+    .visual-card,
+    .visual-card--large {
+        min-height: 20rem;
+        border-radius: 1.2rem;
+    }
+
+    .visual-card__content {
+        left: 0.9rem;
+        right: 0.9rem;
+        bottom: 0.9rem;
+        padding: 0.9rem;
+        border-radius: 1rem;
+    }
+
+    .visual-card__title {
+        font-size: 1.05rem;
+    }
+}
