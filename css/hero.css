@@ -114,28 +114,36 @@
 
     .hero__content {
         max-width: 100%;
+        align-items: center;
+        text-align: center;
     }
 
     .hero__tag {
         font-size: 0.72rem;
         letter-spacing: 0.1rem;
+        text-align: center;
     }
 
     .hero__title {
         max-width: 40rem;
         font-size: clamp(2.7rem, 12vw, 4.6rem);
         letter-spacing: -0.16rem;
+        text-align: center;
+        margin-inline: auto;
     }
 
     .hero__description {
         max-width: 36rem;
         margin-top: 1.2rem;
         font-size: 1rem;
+        text-align: center;
+        margin-inline: auto;
     }
 
     .hero__actions {
         margin-top: 1.7rem;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .hero__image {
@@ -158,6 +166,17 @@
         width: min(100% - 1rem, 100%);
         padding: 2.5rem 0;
         gap: 1.7rem;
+    }
+
+    .hero__content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero__tag,
+    .hero__title,
+    .hero__description {
+        text-align: center;
     }
 
     .hero__tag {
