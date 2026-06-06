@@ -12,7 +12,7 @@ A identidade visual do projeto utiliza uma paleta baseada em vermelho, branco, c
 
 ## 🔗 Repositório
 
-[![GitHub](https://img.icons8.com/ios-glyphs/30/000000/github.png)](https://github.com/EnzoNukui/LocalLead)  
+[![GitHub](https://img.icons8.com/ios-glyphs/30/ffffff/github.png)](https://github.com/EnzoNukui/LocalLead)  
 [https://github.com/EnzoNukui/LocalLead](https://github.com/EnzoNukui/LocalLead)
 
 ---
@@ -21,7 +21,7 @@ A identidade visual do projeto utiliza uma paleta baseada em vermelho, branco, c
 
 O front-end do projeto **LocalLead** está disponível para acesso público através do deploy na Vercel.
 
-🔗 <a href="locallead-site.vercel.app" target="_blank"><strong>Acessar o site do LocalLead</strong></a>
+🔗 <a href="https://locallead-site.vercel.app/index.html" target="_blank"><strong>Acessar o site do LocalLead</strong></a>
 
 ---
 
