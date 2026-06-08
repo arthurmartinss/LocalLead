@@ -177,19 +177,22 @@
 }
 
 .app-screens__grid {
-  width: min(100% - 2rem, 92rem);
-  margin-inline: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+    width: min(100% - 2rem, 70rem);
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.3rem;
+    align-items: start;
 }
 
 .app-screen-card {
-  overflow: hidden;
-  border: 0.0625rem solid var(--border-light);
-  border-radius: 1.6rem;
-  background-color: var(--white);
-  transition: var(--transition-smooth);
+    max-width: 20rem;
+    margin-inline: auto;
+    overflow: hidden;
+    border: 0.0625rem solid var(--border-light);
+    border-radius: 1.4rem;
+    background-color: var(--white);
+    transition: var(--transition-smooth);
 }
 
 .app-screen-card:hover {
@@ -198,16 +201,19 @@
 }
 
 .app-screen-card__image {
-  background-color: var(--light-bg);
-  overflow: hidden;
+    padding: 0.7rem;
+    background-color: var(--light-bg);
+    overflow: hidden;
 }
 
 .app-screen-card__image img {
-  width: 100%;
-  aspect-ratio: 9 / 16;
-  object-fit: cover;
-  object-position: top center;
-  transition: var(--transition-smooth);
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 1rem;
+    object-fit: contain;
+    object-position: center;
+    transition: var(--transition-smooth);
 }
 
 .app-screen-card:hover .app-screen-card__image img {
@@ -508,12 +514,13 @@
     font-size: 0.95rem;
   }
 
-  .app-screens__grid {
-    grid-template-columns: 1fr;
-  }
+    .app-screens__grid {
+      width: min(100% - 1.5rem, 100%);
+      grid-template-columns: 1fr;
+    }
 
   .app-screen-card {
-    max-width: 28rem;
+    max-width: 20rem;
     margin-inline: auto;
   }
 
@@ -636,6 +643,11 @@
 
   .app-screen-card {
     border-radius: 1.2rem;
+    max-width: 18rem;
+  }
+
+  .app-screen-card__image {
+    padding: 0.55rem;
   }
 
   .app-screen-card__content {
