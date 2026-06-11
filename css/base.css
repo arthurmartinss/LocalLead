@@ -29,7 +29,7 @@ html {
 
   --border-light: #d2d2d7;
 
-  --font-stack: "Segoe UI", Tahoma, Verdana, sans-serif;
+  --font-stack: "Segoe UI", Tahoma, Verdana, sans-serif; 
 
   --transition-smooth: all 0.3s ease;
 }

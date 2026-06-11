@@ -1,3 +1,8 @@
+/* Estilo da página de contato */
+
+/* Topo da página com título e subtítulo
+   padding-top para não ficar atrás da navbar
+   flex coluna para empilhar título e subtítulo centralizados */
 .contact-hero {
   padding: 8rem 2rem 3rem 2rem;
   text-align: center;
@@ -8,17 +13,22 @@
   width: 100%;
 }
 
+/* Centraliza o bloco do título */
 .contact-hero .section-heading {
   text-align: center;
   width: 100%;
 }
 
+/* Força o título a ficar centralizado
+   !important porque o CSS global tinha outro alinhamento nessa classe */
 .contact-hero .section-heading__title {
   text-align: center !important;
   margin-inline: auto;
   width: 100%;
 }
 
+/* Texto pequeno abaixo do título
+   max-width para o texto não ficar muito largo */
 .contact-hero__subtitle {
   width: 100%;
   max-width: 650px;
@@ -29,6 +39,9 @@
   text-align: center;
 }
 
+/* Caixa que envolve o formulário
+   max-width para o formulário não ficar enorme em telas grandes
+   margin: 0 auto centraliza na tela */
 .contact-container {
   width: 100%;
   max-width: 680px;
@@ -37,6 +50,8 @@
   box-sizing: border-box;
 }
 
+/* Card cinza que contém todos os campos do formulário
+   flex coluna para os campos ficarem um abaixo do outro */
 .contact-form {
   background-color: var(--light-bg);
   border-radius: 16px;
@@ -49,6 +64,7 @@
   box-sizing: border-box;
 }
 
+/* Cada campo com seu label em cima e o input embaixo */
 .contact-form__group {
   display: flex;
   flex-direction: column;
@@ -57,6 +73,7 @@
   align-items: flex-start;
 }
 
+/* Texto do label de cada campo */
 .contact-form__label {
   font-size: 0.9rem;
   font-weight: 600;
@@ -64,6 +81,8 @@
   text-align: left;
 }
 
+/* Estilo padrão de todos os campos do formulário
+   box-sizing garante que o campo não estoure a largura da tela */
 .contact-form__input {
   padding: 0.75rem 1rem;
   border: 1.5px solid var(--border-light);
@@ -76,12 +95,18 @@
   box-sizing: border-box;
 }
 
+/* Quando o usuário clica no campo para digitar
+   tira a borda padrão do navegador e coloca a borda vermelha do projeto */
 .contact-form__input:focus {
-  outline: none;
+  outline: none;  /* tirando borda com foco no usuario */
   border-color: var(--primary-red);
-  box-shadow: 0 0 0 3px rgba(224, 46, 36, 0.05);
+  box-shadow: 0 0 0 3px rgba(224, 46, 36, 0.05);  /* sombra atras */
+
 }
 
+/* Estilo do campo de seleção (dropdown)
+   appearance: none remove o visual padrão do navegador
+   background-image coloca uma seta própria no lado direito */
 select.contact-form__input {
   cursor: pointer;
   appearance: none;
@@ -92,12 +117,16 @@ select.contact-form__input {
   padding-right: 2.5rem;
 }
 
+/* Campo de mensagem (textarea)
+   resize: vertical deixa o usuário aumentar só a altura
+   font-family: inherit porque o textarea usa fonte diferente por padrão */
 textarea.contact-form__input {
   resize: vertical;
   min-height: 140px;
   font-family: inherit;
 }
 
+/* Mensagem de erro em vermelho que aparece abaixo do campo */
 .contact-form__error {
   font-size: 0.82rem;
   font-weight: 500;
@@ -105,17 +134,21 @@ textarea.contact-form__input {
   margin-top: 0.25rem;
 }
 
+/* Borda vermelha no campo quando o JavaScript detecta que está errado
+   !important para sobrescrever o estilo padrão do campo */
 .contact-form__input--error {
   border-color: var(--primary-red) !important;
   background-color: rgba(224, 46, 36, 0.01);
 }
 
+/* Botão de enviar alinhado à direita */
 .contact-form__actions {
   display: flex;
   justify-content: flex-end;
   width: 100%;
 }
 
+/* Estilo do botão de enviar */
 .contact-form__btn {
   background-color: var(--primary-red);
   color: var(--white);
@@ -128,12 +161,15 @@ textarea.contact-form__input {
   transition: var(--transition-smooth);
 }
 
+/* Ao passar o mouse o botão escurece e sobe um pouco */
 .contact-form__btn:hover {
   background-color: var(--primary-red-dark);
   transform: translateY(-1px);
 }
 
-/* ===== CARD DE SUCESSO ===== */
+/* ===== CARD DE SUCESSO =====
+   aparece no lugar do formulário depois que o usuário envia
+   animation: fadeIn faz ele aparecer suavemente */
 .success-card {
   background-color: var(--light-bg);
   border-radius: 16px;
@@ -148,17 +184,20 @@ textarea.contact-form__input {
   animation: fadeIn 0.4s ease-out;
 }
 
+/* Ícone grande no topo do card de sucesso */
 .success-card__icon {
   font-size: 3rem;
   margin-bottom: 0.5rem;
 }
 
+/* Título do card de sucesso */
 .success-card__title {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--text-main);
 }
 
+/* Texto explicativo do card de sucesso */
 .success-card__text {
   color: var(--text-muted);
   font-size: 1rem;
@@ -166,6 +205,7 @@ textarea.contact-form__input {
   line-height: 1.5;
 }
 
+/* Botão de voltar dentro do card de sucesso */
 .success-card__btn {
   margin-top: 0.75rem;
   background-color: var(--primary-red);
@@ -183,6 +223,8 @@ textarea.contact-form__input {
   background-color: var(--primary-red-dark);
 }
 
+/* Animação de entrada do card de sucesso
+   começa invisível e um pouco abaixo, sobe e aparece suavemente */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -194,10 +236,9 @@ textarea.contact-form__input {
   }
 }
 
-/* 
-   MEDIA QUERIES 
-   */
+/* MEDIA QUERIES */
 
+/* Telas até 992px — reduz o tamanho do formulário */
 @media (max-width: 992px) {
   .contact-form {
     padding: 2rem;
@@ -208,6 +249,8 @@ textarea.contact-form__input {
   }
 }
 
+/* Tablet até 768px
+   botão de enviar ocupa a largura toda para facilitar o toque na tela */
 @media (max-width: 768px) {
   .contact-hero {
     padding-top: 6rem;
@@ -227,6 +270,7 @@ textarea.contact-form__input {
   }
 }
 
+/* Celulares pequenos até 480px — reduz espaçamentos */
 @media (max-width: 480px) {
   .contact-hero {
     padding: 5rem 1rem 2rem 1rem;
